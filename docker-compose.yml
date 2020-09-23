@@ -4,7 +4,7 @@ services:
   springboot:
     image: 13.126.18.101:8085/spring_boot_app
     restart: always
-    container_name: springboot
+    container_name: springboot_c
     ports:
       - 9090:8080
     working_dir: /opt/app
