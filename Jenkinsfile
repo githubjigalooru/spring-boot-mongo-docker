@@ -28,5 +28,11 @@ pipeline {
                 sh label: '', script: 'docker push amruth0005/spring_mongo:${BUILD_NUMBER}'
             }
         }
+       
     }
+    post {
+        always {
+	     sh label: '', script: 'echo Hello completed the images build'
+		}
+	}	
 }
